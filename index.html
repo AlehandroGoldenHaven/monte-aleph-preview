@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Monte Aleph · Véncete, gobiérnate, conquístate</title>
+  <meta name="description" content="Monte Aleph es una escuela de vida donde aprendes a pilotar tu ser como si fuera un castillo interior. Mística y neurociencia aplicada a la vida diaria.">
+  <meta name="theme-color" content="#08111F">
+  <meta property="og:title" content="Monte Aleph">
+  <meta property="og:description" content="Hay una puerta que solo se abre desde dentro.">
+  <link rel="icon" type="image/png" href="/monte-aleph-preview/brand/favicon.png">
+  <script type="module" crossorigin src="/monte-aleph-preview/assets/index-ymI1v_bY.js"></script>
+  <link rel="modulepreload" crossorigin href="/monte-aleph-preview/assets/three-Lyd5eRxC.js">
+  <link rel="stylesheet" crossorigin href="/monte-aleph-preview/assets/index-CPnp4of_.css">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grade" aria-hidden="true"></div>
+  <div class="flash" id="flash" aria-hidden="true"></div>
+
+  <div class="veil" id="veil" aria-hidden="true">
+    <div class="veil-inner">
+      <img src="/monte-aleph-preview/brand/emblema.png" alt="" class="veil-emblem">
+      <p class="veil-text">Despejando la bruma</p>
+      <span class="veil-line"><i id="veil-progress"></i></span>
+    </div>
+  </div>
+
+  <header class="bar" id="bar">
+    <a class="brand" href="#" id="home" aria-label="Monte Aleph, volver al inicio del recorrido">
+      <img src="/monte-aleph-preview/brand/emblema.png" alt="">
+      <span class="wm" aria-hidden="true"></span>
+    </a>
+    <div class="bar-actions">
+      <button type="button" class="chip" id="sound" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.8L13 18.5v-13L7.8 9.5z"/><path class="wave" d="M16.2 9.2a4 4 0 0 1 0 5.6M18.6 6.8a7.4 7.4 0 0 1 0 10.4"/></svg>
+        <span>Activar sonido</span>
+      </button>
+      <button type="button" class="chip" id="skip">Saltar a la ciudadela</button>
+    </div>
+  </header>
+
+  <main class="story" id="story">
+    <h1 class="sr-only">Monte Aleph</h1>
+
+    <section class="beat intro" data-in="0" data-out="0.07">
+      <img src="/monte-aleph-preview/brand/emblema.png" alt="Emblema de Monte Aleph" class="intro-emblem">
+      <div class="wm-mask intro-wm" role="img" aria-label="Monte Aleph"></div>
+      <p class="lema">Véncete · Gobiérnate · Conquístate</p>
+      <p class="hint" aria-hidden="true"><span>Desliza para acercarte</span><i></i></p>
+    </section>
+
+    <section class="beat side left" data-in="0.095" data-out="0.205">
+      <p class="eyebrow">El llamado</p>
+      <h2>Hay una puerta que solo se abre desde dentro.</h2>
+    </section>
+
+    <section class="beat side right" data-in="0.245" data-out="0.355">
+      <p class="eyebrow">Monte Aleph</p>
+      <h2>Una escuela de vida.<br>Un castillo interior.</h2>
+      <p class="sub">Mística y neurociencia aplicada a la vida diaria.</p>
+    </section>
+
+    <section class="beat center" data-in="0.43" data-out="0.5">
+      <h2 class="cruza">Cruza.</h2>
+    </section>
+
+    <section class="beat side left" data-in="0.735" data-out="0.845">
+      <p class="eyebrow">La revelación</p>
+      <h2>Tu vida también tiene arquitectura.</h2>
+      <p class="sub">Diez dimensiones. Habilidades entrenables. Resultados que puedes observar.</p>
+    </section>
+
+    <section class="beat final" data-in="0.925" data-out="1.5">
+      <p class="eyebrow">La ciudadela no termina aquí</p>
+      <h2>Elige por dónde entrar.</h2>
+    </section>
+
+    <nav class="accesses" id="accesses" aria-label="Accesos a la ciudadela">
+      <button type="button" class="access" data-key="primera">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="label"><b>La primera puerta</b><small>Experiencia de 8 horas</small></span>
+      </button>
+      <button type="button" class="access" data-key="metodo">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="label"><b>El método</b><small>La torre del Aleph</small></span>
+      </button>
+      <button type="button" class="access" data-key="biblioteca">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="label"><b>Biblioteca Viva</b><small>Próximamente</small></span>
+      </button>
+      <button type="button" class="access" data-key="mapa">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="label"><b>Tu mapa</b><small>El observatorio</small></span>
+      </button>
+    </nav>
+
+    <div class="final-bar" id="final-bar">
+      <p>La primera puerta ya está abierta.</p>
+      <div class="final-actions">
+        <a class="btn pri" href="https://www.montealeph.com/">Cruzar el umbral</a>
+        <a class="btn sec" href="https://www.montealeph.com/">Descargar gratis el primer módulo</a>
+      </div>
+    </div>
+  </main>
+
+  <aside class="panel" id="panel" role="dialog" aria-labelledby="panel-title" hidden>
+    <button type="button" class="panel-close" id="panel-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <p class="eyebrow" id="panel-eyebrow"></p>
+    <h3 id="panel-title"></h3>
+    <p class="panel-text" id="panel-text"></p>
+    <p class="panel-note" id="panel-note"></p>
+    <a class="btn pri" id="panel-cta" href="#"></a>
+  </aside>
+
+  <div class="hud" id="hud" aria-hidden="true">
+    <span class="chapter"><b id="chapter-n">01</b><span id="chapter-name">Plano lejano</span></span>
+    <span class="progress"><i id="progress"></i></span>
+  </div>
+
+  <div class="track" id="track" aria-hidden="true"></div>
+
+  <section class="fallback" aria-label="Monte Aleph">
+    <img src="/monte-aleph-preview/brand/emblema.png" alt="Emblema de Monte Aleph">
+    <h2>Hay una puerta que solo se abre desde dentro.</h2>
+    <p>Monte Aleph es una escuela de vida donde aprendes a pilotar tu ser como si fuera un castillo interior.</p>
+    <a class="btn pri" href="https://www.montealeph.com/">Cruzar el umbral</a>
+  </section>
+
+</body>
+</html>
